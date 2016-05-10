@@ -1,0 +1,57 @@
+<div class="loginFormDiv">
+    <div class="form-group">
+        <div class="loginForm">Login Into Your Account</div>
+        <div class="loginForm">
+            <input type="text" class="form-control loginUserName" id="username" placeholder="Username" ng-model="loginCtrl.user.username" autocomplete="true">
+        </div>
+        <div class="loginForm">
+            <input type="password" class="form-control loginUserName" id="password" placeholder="Password" ng-model="loginCtrl.user.password">
+        </div>
+        <div class="loginForm">
+            <button type="button" ng-click="loginCtrl.login()" class="btn btn-success loginUserName">Sign In</button>
+        </div>
+        <div class="loginForm smallFont">
+            <div style="float:left">
+                <input type="checkbox" id="cb1" name="cb" value="">
+                <label for="cb1">Remeber Me</label>
+                <br>
+            </div>
+            <div style="float:left"></div>
+            <div style="float:right">
+                <a>Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="loginFormDivSeprator">
+    <div class="topSeprator"></div>
+    <div class="divText">or</div>
+    <div class="topSeprator bottomSeprator"></div>
+</div>
+<div class="loginFormDiv socialLogIn">
+
+    <div class="loginForm smallFont" style="height:57px">
+        <button type="button" class="btn btn-link" ng-click="loginCtrl.signUP()">
+            Don't have an account?Sign Up!
+        </button>
+    </div>
+    <div class="loginForm">
+        <a class="fb-auth" data-gaclick="1" href="/auth/facebook">
+            <span class="social-icon fb-logo"></span>
+            <span class="social-icon fb-logo-text" />
+        </a>
+    </div>
+    <div class="loginForm">
+        <a class="fb-auth" data-gaclick="1" href="/auth/facebook">
+            <span class="social-icon li-logo"></span>
+            <span class="social-icon li-logo-text" />
+        </a>
+    </div>
+    <div class="loginForm">
+        <a class="fb-auth" data-gaclick="1" href="/auth/facebook">
+            <span class="social-icon gg-logo"></span>
+            <span class="social-icon gg-logo-text" />
+        </a>
+    </div>
+    </span>
+</div>

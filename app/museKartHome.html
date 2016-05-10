@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html ng-app="museKartApp">
+
+<head>
+    <title>museKartApp</title>
+    <script>
+        console.log("dont forget to start backend server first. it is in server/ folder");
+    </script>
+    <!-- external css -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/circle.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/museKart.css">
+    <!-- external libraries -->
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.js"></script>
+    <!-- app module -->
+    <script type="text/javascript" src="app.js"></script>
+    <!-- auth module -->
+    <script type="text/javascript" src="modules/auth/auth.js"></script>
+    <script type="text/javascript" src="modules/auth/auth.services.js"></script>
+    <script type="text/javascript" src="modules/auth/auth.controllers.js"></script>
+    <!-- signUP module -->
+    <script type="text/javascript" src="modules/signUp/signUP.js"></script>
+    <script type="text/javascript" src="modules/signUp/signUP.services.js"></script>
+    <script type="text/javascript" src="modules/signUp/signUP.controllers.js"></script>
+    <!-- prod module -->
+    <script type="text/javascript" src="modules/prod/prod.js"></script>
+    <script type="text/javascript" src="modules/prod/prod.services.js"></script>
+    <script type="text/javascript" src="modules/prod/prod.controllers.js"></script>
+    <!-- layout module -->
+    <script type="text/javascript" src="modules/layout/layout.js"></script>
+    <script type="text/javascript" src="modules/layout/layout.controllers.js"></script>
+    <script type="text/javascript" src="modules/utils.js"></script>
+
+    <script type="text/javascript" src="modules/home/home.js"></script>
+    <script type="text/javascript" src="modules/home/home.controller.js"></script>
+    <script type="text/javascript" src="modules/home/home.services.js"></script>
+
+</head>
+
+
+<body style="height:100%" ng-controller="AppHomeCtrl as ctrl">
+    <!--div ng-include="'modules/layout/header.html'"></div-->
+    <div id='homeScreen'>
+        <div class="divHome">
+            <div>
+                <div class="divLink">
+                    <button type="button" class="btn btn-link ">
+                        <a style="color: aliceblue;font-weight:100">START HIRING</a>
+                    </button>|
+                    <button type="button" class="btn btn-link" ng-click="ctrl.signUP()">
+                        <a style="color: aliceblue;font-weight:100">SIGN UP</a>
+                    </button>|
+                    <button type="button" class="btn btn-link" ng-click="ctrl.signIN()">
+                        <a style="color: aliceblue;font-weight:100">SIGN IN</a>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper homeB">
+
+                <button type="button" class="btn btn-primary button-join-us" ng-click="ctrl.signUP()" />
+            </div>
+        </div>
+        <div class="ff_employer">
+
+        </div>
+        <div class="successStories">
+            <div class="wrapper ss">
+                <button type="button" class="btn btn-default button-join-us-b" />
+            </div>
+        </div>
+        <div class="howItWork"></div>
+        <div class="footerDiv"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div ng-class='ctrl.modalPopup'>
+
+                <!-- Modal content-->
+                <div class="modal-content loginContent">
+                    <div class="modal-body" ng-view style="height:100%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--div ng-include="'modules/layout/footer.html'"></div-->
+    <div id='dashboardScreen' style="display:none;height:100%;overflow:hidden">
+        <div ng-include="'modules/layout/header.html'" class="headerDiv"></div>
+        <div ng-view class="body">
+        </div>
+        <div ng-include="'modules/layout/footer.html'"></div>
+    </div>
+    <div class="modal fade editDetails" id="detailsPopup" role="dialog">
+        <div ng-include="'modules/layout/editDetails.html'" ></div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-body intro homeDivContent">
+                <div><i class="fa fa-file-text fa-5x "></i></div>
+                <div>
+                    <h6>Introduction</h6> {{ctrl.data.intro}}
+                </div>
+            </div>
+            <div class="panel-footer">
+                <i class="fa fa-external-link roundIcon" ng-click="ctrl.edit('intro',true)"></i>
+                <i class="fa fa-pencil-square-o roundIcon" ng-click="ctrl.edit('intro',false)"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-body education homeDivContent">
+                <div><i class="fa fa-graduation-cap fa-5x "></i></div>
+                <div>
+                    <h6>Education</h6> {{ctrl.data.education}}
+                </div>
+            </div>
+            <div class="panel-footer">
+               <i class="fa fa-external-link roundIcon" ng-click="ctrl.edit('education',true)"></i>
+                <i class="fa fa-pencil-square-o roundIcon" ng-click="ctrl.edit('education',false)"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-body experience homeDivContent">
+                <div><i class="fa fa-university fa-5x "></i></div>
+                <div>
+                    <h6>Experience</h6> {{ctrl.data.experience}}
+                </div>
+            </div>
+            <div class="panel-footer">
+                <i class="fa fa-external-link roundIcon" ng-click="ctrl.edit('experience',true)"></i>
+                <i class="fa fa-pencil-square-o roundIcon" ng-click="ctrl.edit('experience',false)"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-body skills homeDivContent">
+                <div><i class="fa fa-cogs fa-5x "></i></div>
+                <div>
+                    <h6>Skills</h6> {{ctrl.data.skills}}
+                </div>
+            </div>
+            <div class="panel-footer">
+                <i class="fa fa-external-link roundIcon" ng-click="ctrl.edit('skills',true)"></i>
+                <i class="fa fa-pencil-square-o roundIcon" ng-click="ctrl.edit('skills',false)"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-primary ">
+            <div class="panel-body portfolio homeDivContent">
+                <div><i class="fa fa-briefcase fa-5x "></i></div>
+                <div>
+                    <h6>Portfolio</h6>{{ctrl.data.portfolio}}
+                </div>
+            </div>
+            <div class="panel-footer">
+                <i class="fa fa-external-link roundIcon" ng-click="ctrl.edit('portfolio',true)"></i>
+                <i class="fa fa-pencil-square-o roundIcon" ng-click="ctrl.edit('portfolio',false)"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-body bespokeUrl homeDivContent">
+                <div><i class="fa fa-wordpress fa-5x "></i></div>
+                <div>
+                    <h6>Bespoke URL</h6> {{ctrl.data.bespokeURL}}
+                </div>
+            </div>
+            <div class="panel-footer">
+                <i class="fa fa-external-link roundIcon" ng-click="ctrl.edit('bespokeURL',true)"></i>
+                <i class="fa fa-pencil-square-o roundIcon" ng-click="ctrl.edit('bespokeURL',false)"></i>
+            </div>
+        </div>
+    </div>
+</div>

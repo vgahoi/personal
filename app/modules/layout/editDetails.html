@@ -1,0 +1,46 @@
+<div class="modal-header editHeader">
+    <span><i class="fa fa-times roundIcon" data-dismiss="modal"></i>
+   &nbsp;<i class="fa fa-pencil-square-o roundIcon" ng-click='ctrl.makeEditable()'></i></span>
+    <span class="boldFont">{{ctrl.headerName}}</span>
+
+
+</div>
+<div class="modal-body editBody" id='detailBody'>
+    <div ng-hide='ctrl.readOnly'>
+        <textarea ng-show='ctrl.operation != "education" && ctrl.operation != "experience"' ng-model="ctrl.bodyText"></textarea>
+        <div ng-show='ctrl.operation == "education"' class='educationEdit'>
+            <div><a class="btn btn-primary small">Add Education</a></div>
+            <div ng-repeat="item in ctrl.data.education">
+                <div>
+                   <select ng-model="item.class">
+                    <option>10th</option>
+                    <option>12th</option>
+                    <option>10th</option>
+                   </select>
+                </div>
+                <div>
+                    <input type='text' maxlength='100' placeholder='College Name' ng-model='item.name'/>
+                </div>
+                <div>
+                    <input type='text' maxlength='5' size='5' placeholder='Year' ng-model='item.year'/>
+                </div>
+                <div>
+                    <input type='text' maxlength='5' size='5' placeholder='% or Grade' ng-model='item.per'/>
+                </div>
+                <div>
+                   <i class="fa fa-pencil-square-o fa-2x" ng-click='ctrl.makeRowEditable()'></i>
+                </div>
+            </div>
+        </div>
+        <div ng-show='ctrl.operation == "experience"'>
+
+        </div>
+    </div>
+    <div ng-show='ctrl.readOnly'>
+        <p>{{ctrl.bodyText}}</p>
+    </div>
+</div>
+<div class="modal-footer">
+    <a data-dismiss="modal" class="btn">Close</a>
+    <a ng-click='ctrl.updateData()' class="btn btn-primary small">Save changes</a>
+</div>

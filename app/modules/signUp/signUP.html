@@ -1,0 +1,58 @@
+<form name='signUPForm'>
+    <div class="signUPDiv">
+        <DIV CLASS='signUPForm'>
+            <input type="text" class="form-control" placeholder="Username" ng-model="ctrl.user.username" autocomplete="true" required/>
+            <input type="text" class="form-control" placeholder="Email" ng-model="ctrl.user.email" autocomplete="true" />
+            <input type="password" class="form-control " placeholder="Password" ng-model="ctrl.user.password" autocomplete="true" />
+            <input type="password" class="form-control " placeholder="Retype Password" ng-model="ctrl.user.repassword" autocomplete="true" />
+            <input type="text" class="form-control " placeholder="City" ng-model="ctrl.user.city" autocomplete="true" />
+            <input type="text" class="form-control " placeholder="Country" ng-model="ctrl.user.country" autocomplete="true" />
+        </DIV>
+
+
+        <div class="radioDiv">
+            <label for="signUPType" class="fontStyle">Are you professional ?</label>
+            <div id="radioBtn" class="btn-group">
+                <a class="btn btn-primary btn-sm active" data-toggle="signUPType" data-title="Y" ng-click="ctrl.toggleRadioButton($event)">YES</a>
+                <a class="btn btn-primary btn-sm notActive" data-toggle="signUPType" data-title="N" ng-click="ctrl.toggleRadioButton($event)">NO</a>
+            </div>
+            <input type="hidden" name="signUPType" ng-model='signUPType'>
+        </div>
+
+        <div class="form-group signUPForm" ng-show="ctrl.user.signUPType == 'Y'">
+            <input type="text" class="form-control " placeholder="Job Title" ng-model="ctrl.user.jobTitle" autocomplete="true" />
+            <input type="text" class="form-control " placeholder="Company" ng-model="ctrl.user.company" autocomplete="true" />
+            <input type="text" class="form-control " placeholder="Industry" ng-model="ctrl.user.industry" autocomplete="true" />
+        </div>
+
+        <div class="form-group signUPForm" ng-show="ctrl.user.signUPType == 'N'">
+            <div style="height:30px;width:100%;float:left">
+                <div style="width:25%;float:left">
+                    Start Year:
+                </div>
+                <div class="select-style" style="width:70px;float:left">
+                    <select ng-model="startYear">
+                        <option ng-repeat="n in ctrl.yearRange">{{n}}</option>
+                    </select>
+                </div>
+                <div style="width:25%;float:left">
+                    End Year:
+                </div>
+                <div class="select-style" style="width:70px;float:left">
+                    <select ng-model="endYear">
+                        <option ng-repeat="n in ctrl.yearRange">{{n}}</option>
+                    </select>
+                </div>
+
+
+
+            </div>
+            <input type="text" class="form-control " placeholder="College" ng-model="ctrl.user.college" autocomplete="true" />
+            <input type="text" class="form-control " placeholder="Stream" ng-model="ctrl.user.stream" autocomplete="true" />
+
+        </div>
+
+        <button type="button" class="btn btn-primary" ng-click="ctrl.joinUS()">Join Now !</button>
+
+    </div>
+</form>

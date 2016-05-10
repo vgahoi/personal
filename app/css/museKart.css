@@ -1,0 +1,1244 @@
+@font-face {
+    src: url("../lib/fontawesome-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+html * {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+
+.invalid {
+    background: white url("../images/JoinUs.png") right no-repeat;
+    padding-left: 17px;
+}
+
+.valid {
+    background: white url("../images/JoinUs.png") left no-repeat;
+    padding-left: 17px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=radio] + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-color: #E6E6E6;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
+    border-radius: 8px;
+}
+
+input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-color: #E6E6E6;
+    box-shadow: inset 1px 1px 1px black;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2714";
+    color: black;
+    background-color: #E6E6E6;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 14px;
+    text-shadow: 0px 0px 0px #CECACA;
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "\2714";
+    color: black;
+    background-color: #E6E6E6;
+    text-align: center;
+    line-height: 15px;
+}
+
+.divHome {
+    background-image: url("../images/homepage.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 592px;
+}
+
+.divLink {
+    position: relative;
+    float: right;
+    color: aliceblue;
+}
+
+;
+.ff_employer {
+    background-image: url("../images/FE_Content.jpg");
+    background-repeat: no-repeat;
+    background-position: center -40px;
+    width: 100%;
+    height: 700;
+}
+
+.successStories {
+    background-image: url("../images/ContentSS.png");
+    background-repeat: no-repeat;
+    background-position: center -22px;
+    width: 100%;
+    height: 581px;
+}
+
+.howItWork {
+    background-image: url("../images/howItWorksContent.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 652px;
+}
+
+.footerDiv {
+    background-image: url("../images/Footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 25px;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    top: 83.3%;
+    float: none;
+}
+
+.homeB {
+    left: 10%;
+    width: 80%;
+}
+
+.employer {
+    top: 89%;
+}
+
+.ss {
+    top: 89.4%;
+}
+
+.button-join-us {
+    background-image: url("../images/JoinUs.png");
+    background-position: center top;
+    width: 130px;
+    height: 42px;
+    background-repeat: no-repeat;
+}
+
+.loginUserName {
+    width: 300px;
+    HEIGHT: 40px;
+    text-align: center;
+}
+
+.loginModal {
+    width: 55%;
+    height: 400px;
+    align-content: center;
+    top: 40px;
+}
+
+.loginContent {
+    align-content: center;
+    background-color: #D4D4D4;
+    height: 100%
+}
+
+.loginFormDiv {
+    position: relative;
+    float: left;
+    width: 49%;
+    height: 100%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.loginForm {
+    padding-left: 20px;
+    padding-bottom: 15PX;
+    padding-top: 15PX;
+    padding-right: 30PX;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.smallFont {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.loginFormDivSeprator {
+    position: relative;
+    width: 0;
+    border: 0;
+    float: left;
+    top: 50px;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: 100;
+    height: 100%;
+}
+
+.topSeprator {
+    position: relative;
+    height: 35%;
+    width: 0;
+    border: 2px Solid;
+    border-left: 3px;
+    border-color: aliceblue;
+}
+
+.button-join-us-p {
+    background-image: url("../images/JoinUSP.png");
+    background-position: center top;
+    width: 130px;
+    height: 42px;
+    background-repeat: no-repeat;
+}
+
+.button-join-us-b {
+    background-image: url("../images/JoinUS_B.png");
+    background-position: center top;
+    width: 130px;
+    height: 42px;
+    background-repeat: no-repeat;
+}
+
+.social-icon {
+    height: 40px;
+    display: inline-block;
+    width: 47px;
+}
+
+.fb-auth {
+    word-spacing: -3px;
+    letter-spacing: -3px;
+}
+
+.fb-logo {
+    background-image: url("../images/Fblogo.png");
+    margin-right: 0px;
+}
+
+.fb-logo-text {
+    margin-left: 0px;
+    background-image: url("../images/SigninFB.png");
+    width: 200px;
+}
+
+.li-logo {
+    background-image: url("../images/LinkedIn.png");
+}
+
+.li-logo-text {
+    background-image: url("../images/SignINLinkedin.png");
+    width: 200px;
+}
+
+.gg-logo {
+    background-image: url("../images/Google.png");
+}
+
+.gg-logo-text {
+    background-image: url("../images/SignINGoogle.png");
+    width: 200px;
+}
+
+.socialLogIn {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#radioBtn .notActive {
+    color: #3276b1;
+    background-color: #fff;
+}
+
+.signUPModal {
+    width: 35%;
+    height: 530px;
+    align-content: center;
+    text-align: center;
+    top: 40px;
+}
+
+.signUPDiv {
+    padding: 20PX;
+}
+
+.signUPForm {
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: inset ridge;
+}
+
+.radioDiv {
+    padding: 15px;
+}
+
+.fontStyle {
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 30px;
+    align-content: flex-start;
+}
+
+.headerDiv {
+    overflow: hidden;
+    width: 100%;
+    min-height: 70px;
+}
+
+.header {
+    background: #184E60;
+    padding-left: 80px;
+    padding-right: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo {
+    background-image: url("../images/Logo.png");
+    width: 167px;
+    height: 45px;
+    float: left;
+    padding-left: 150px;
+}
+
+.button-add-user {
+    background-image: url("../images/add.png");
+    width: 48px;
+    height: 45px;
+    float: left;
+}
+
+.button-notification {
+    background-image: url("../images/Notification.png");
+    width: 48px;
+    height: 45px;
+    float: left;
+}
+
+.button-message {
+    background-image: url("../images/Message.png");
+    width: 48px;
+    height: 45px;
+    float: left;
+}
+
+.button-dp {
+    background-image: url("../images/TopDp.png");
+    background-position: center;
+    background-color: #184E60;
+    width: 48px;
+    height: 45px;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.stylish-input-group .input-group-addon {
+    text-align: center;
+    vertical-align: bottom;
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+    height: 25px;
+}
+
+.input-group-addon {
+    padding: 2px;
+}
+
+.input-group-addon button {
+    border: 0;
+    background: transparent;
+}
+
+.appHeader {
+    background: #184E60;
+    height: 25px;
+    bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    z-index: 50000;
+}
+
+.footerLink {
+    float: right;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.footerLink >button {
+    font-size: 10px;
+    color: azure;
+}
+
+.emailConfirmation {
+    height: 210px;
+    width: 500px;
+}
+
+.emailConfirmation >div>div {
+    padding: 0px;
+}
+
+.emailConfirmation > div > div >div >.top {
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #2d2b2b;
+}
+
+.emailConfirmation > div > div >div >.top> div {
+    text-align: center;
+    vertical-align: middle;
+    background-image: url("../images/Envelope.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 53px;
+}
+
+.emailConfirmation > div > div >div >.top> div+div {
+    background-image: none;
+    padding: 10px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+.emailConfirmation > div > div >div >.top> div+div+div {
+    background-image: none;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 100;
+    color: aliceblue;
+}
+
+.emailConfirmation > div > div >div >.bottom {
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    padding: 13px;
+}
+
+.emailConfirmation > div > div >div > .bottom > div {
+    float: left;
+}
+
+.emailConfirmation > div > div >div >.bottom > div +div {
+    float: right;
+}
+
+.btn-dark {
+    background-color: #184E60;
+    color: aliceblue;
+    font-size: 12px;
+    width: 150px;
+}
+
+.headerNext {
+    background-color: #2d7a83;
+    width: 100%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.l-fit-height {
+    display: table;
+    height: 100%;
+}
+
+.l-fit-height-row {
+    display: table-row;
+    height: 1px;
+}
+
+.l-fit-height-row-content {
+    /* Firefox requires this */
+    display: table-cell;
+}
+
+.l-fit-height-row-expanded {
+    height: 100%;
+    display: table-row;
+}
+
+.l-fit-height-row-expanded > .l-fit-height-row-content {
+    height: 100%;
+    width: 100%;
+}
+
+@-moz-document url-prefix() {
+    .l-scroll {
+        /* Firefox requires this to do the absolute positioning correctly */
+        display: inline-block;
+    }
+}
+
+.l-scroll {
+    overflow-y: auto;
+    position: relative;
+    height: 1000px;
+}
+
+.l-scroll-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 1000px;
+    min-height: 100px;
+}
+
+.body {
+    position: relative;
+    height: calc(100% - 100px);
+    width: 100%;
+    overflow: auto;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.bodyDiv {
+    height: 100%;
+    width: 100%;
+}
+
+.bodyDiv > div {
+    float: left;
+    width: 25%;
+    padding-top: 50px;
+    padding-right: 10px;
+    height: 90%;
+    position: relative;
+}
+
+.bodyDiv > div+div {
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+
+.bodyDiv > div+div+div {
+    float: left;
+    width: 25%;
+    text-align: right;
+    height: inherit;
+    height: 100%;
+}
+
+.button-link {
+    height: 25px;
+    font-weight: 900;
+    background-color: #236068;
+    border: none;
+    color: aliceblue;
+}
+
+.searchStyle {
+    top: 10px;
+    padding-right: 40px;
+}
+
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 6px;
+    color: aliceblue;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #2D7A83;
+    background: #2D7A83 url("../images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.userInfo {
+    height: 40px;
+}
+
+.userInfo >div >div {
+    float: left;
+    padding: 5px;
+}
+
+.nameDiv {
+    position: relative;
+    padding: 5px;
+}
+
+.nameDiv >span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nameDiv >span+span {
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.map {
+    min-height: 300px;
+    width: 100%;
+    height: auto !important;
+    border: 2px solid #E6E6E6;
+}
+
+button.tab {
+    width: 32.6%;
+    background-color: #E6E6E6;
+}
+
+button.tab >span {
+    font-size: 14px;
+    font-weight: 500;
+    float: left;
+}
+
+button.tab >span+span {
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: 200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 80%;
+    float: right;
+}
+
+################################################################################################################ ################################################################################################################ ################################################################################################################ .slides-frame {
+    border: 3px solid blue;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+div.slides {
+    -webkit-animation: slideUp 20s alternate infinite;
+    -moz-animation: slideUp 20s alternate infinite;
+    -o-animation: slideUp 20s alternate infinite;
+    animation: slideUp 20s alternate infinite;
+    position: relative;
+}
+
+div.slide {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    font-size: 0;
+}
+
+lesshat-selector {
+    -lh-property: 0;
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 100px;
+    }
+    47% {
+        bottom: 200px;
+    }
+    54% {
+        bottom: 300px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+}
+
+@-moz-keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 100px;
+    }
+    47% {
+        bottom: 200px;
+    }
+    54% {
+        bottom: 300px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+}
+
+@-o-keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 100px;
+    }
+    47% {
+        bottom: 200px;
+    }
+    54% {
+        bottom: 300px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 400px;
+    }
+    47% {
+        bottom: 400px;
+    }
+    54% {
+        bottom: 400px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+    ;
+}
+
+lesshat-selector {
+    -lh-property: 0;
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 100px;
+    }
+    47% {
+        bottom: 200px;
+    }
+    54% {
+        bottom: 300px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+}
+
+@-moz-keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 100px;
+    }
+    47% {
+        bottom: 200px;
+    }
+    54% {
+        bottom: 300px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+}
+
+@-o-keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 100px;
+    }
+    47% {
+        bottom: 200px;
+    }
+    54% {
+        bottom: 300px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 0;
+    }
+    27% {
+        bottom: 100px;
+    }
+    47% {
+        bottom: 200px;
+    }
+    54% {
+        bottom: 300px;
+    }
+    74% {
+        bottom: 400px;
+    }
+    80% {
+        bottom: 400px;
+    }
+    100% {
+        bottom: 400px;
+    }
+    ;
+}
+
+.social-links {
+    padding-right: 25px;
+}
+
+.social-links a {
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #236068;
+    border-radius: 100%;
+    margin-right: 7px;
+    /*space between*/
+}
+
+.social-links a i {
+    font-size: 80px;
+    line-height: 85px;
+    color: #236068;
+}
+
+.intro {
+    color: #003471;
+    height: 100px;
+}
+
+.homeDivContent > div {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+}
+
+.homeDivContent > div >span {
+    vertical-align: top;
+}
+
+.homeDivContent > div +div {
+    display: block;
+    height: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    width: calc(100% - 70px);
+    float: left;
+}
+
+.education {
+    color: #184e60;
+    height: 100px;
+}
+
+.experience {
+    color: #ce9e83;
+    height: 100px;
+}
+
+.skills {
+    color: #0bc2c0;
+    height: 100px;
+}
+
+.portfolio {
+    color: #814e17;
+    height: 100px;
+}
+
+.bespokeUrl {
+    color: #605ca8;
+    height: 100px;
+}
+
+.right {
+    flex-flow: inherit;
+    flex-grow: initial;
+    float: right;
+}
+
+.roundIcon {
+    padding: 7px 7px 7px 7px;
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    -moz-box-shadow: 0px 0px 2px #888;
+    -webkit-box-shadow: 0px 0px 2px #888;
+    box-shadow: 0px 0px 2px #888;
+    float: right;
+}
+
+.rotate {
+    padding: 7px 10px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.panel-footer {
+    padding: 5px 10px;
+    height: 35px;
+}
+
+.panel-body {
+    padding: 10px;
+}
+
+.panel-primary {
+    border-color: #ebebeb;
+}
+
+.editDetails {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background: #C2C3C5;
+    border-radius: 10px;
+    border: 2px solid #2D7A83;
+}
+
+.editDetails > DIV {
+    height: 100%;
+}
+
+.editDetails > DIV >DIV {
+    height: 20%;
+    padding: 10px;
+}
+
+.editBody {
+    height: 60% !important;
+}
+
+.editBody > DIV {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.editBody > DIV > TEXTAREA {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.boldFont {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.mainLogo {
+    height: 20%;
+    width: 100%;
+    padding: 15px;
+}
+
+.profileUpload {
+    float: right;
+    width: 50%
+}
+
+.profileUpload > DIV {
+    padding: 10px;
+}
+
+.profileUpload > DIV > span {
+    margin: 5px;
+    width: 5px !important;
+    height: 5px !important;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.profileUpload > DIV > span > i> input {
+    display: block !important;
+    width: 5px !important;
+    height: 5px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+.file-input-wrapper {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.file-input-wrapper > input[type="file"] {
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.file-input-wrapper > .btn-file-input {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.rightDiv {
+    width: 100%;
+    height: 100% !important;
+}
+
+.circle {
+    left: 25%;
+}
+
+.completeWidth {
+    width: 90% !important;
+    height: 140px;
+    text-align: center;
+    MARGIN: 20PX;
+    MARGIN: 20PX;
+    PADDING: 10PX;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.completeWidth > DIV + DIV {
+    border: 1PX SOLID #E6E6E6;
+    height: 80% !important;
+    margin: 2px;
+    overflow-y: scroll;
+    background: #F5F5F5;
+}
+
+.connections {
+    border-bottom: 1px SOLID #E6E6E6;
+    font-size: 12px;
+    padding: 10px;
+    text-align: left
+}
+
+.connections > DIV > SPAN {
+    float: left;
+    width: 15%;
+}
+
+.connections > DIV > SPAN + SPAN {
+    float: none;
+}
+
+.connections > DIV + DIV {
+    font-weight: 200;
+}
+
+.full {
+    width: 100%;
+    height: 30px;
+    background: #A29D9D;
+    border-radius: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.small {
+    height: 25px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.educationEdit > DIV +DIV {
+    height: 30px;
+}
+
+.educationEdit > DIV +DIV > DIV {
+    width: 10%;
+    float: left;
+}
+
+.educationEdit > DIV +DIV > DIV>Select {
+    width: 100%;
+    background: #E6E6E6;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 0;
+    height: 24px;
+}
+
+.educationEdit > DIV +DIV > DIV + DIV {
+    width: 55%;
+    float: left;
+}
+
+.educationEdit > DIV +DIV > DIV + DIV > INPUT {
+    width: 100%;
+    height: 25px;
+    padding: 2px;
+}
+
+.educationEdit > DIV +DIV > DIV + DIV +DIV {
+    width: 15%;
+    float: left;
+}
+
+.educationEdit > DIV +DIV > DIV + DIV +DIV+DIV {
+    width: 10%;
+    float: left;
+}
+
+.educationEdit > DIV +DIV > DIV + DIV +DIV+DIV+DIV {
+    width: 10%;
+    float: right;
+    padding: 3px;
+}
+
+.connectionDiv {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connectionDiv .fontHeader {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.connectionContent {
+    width: 80%;
+    height: 100%;
+    flex: 1;
+    border: 1px SOLID red;
+}

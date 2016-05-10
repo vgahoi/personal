@@ -1,0 +1,134 @@
+<div class="bodyDiv">
+    <div>
+        <div class='mainLogo'>
+            <div class="social-links right">
+                <a><i class="fa fa-user fa-5x"></i></a>
+            </div>
+        </div>
+        <div class='mainLogo right'>
+            
+            <div style="height:100%;width:100%" >
+                <div class="profileUpload">
+                    <hr>
+                    <div>
+                        <span class="file-input-wrapper">
+                          <a class="btn-file-input">
+                          <i class="fa fa-paperclip"></i>
+                          </a>
+                          <input type="file" name="file" />
+                        </span>
+                        <span>ATTACH A RESUME</span>
+                    </div>
+                    <div>
+                        <span class="file-input-wrapper">
+                          <a class="btn-file-input">
+                          <i class="fa fa-upload"></i>
+                          </a>
+                          <input type="file" name="file" />
+                        </span>
+                        <span>UPLOAD PORTFOLIO</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <div class="nameDiv">
+            <span>
+                    Vishwas Gahoi
+            </span>
+            <span>
+                    Bangalore, Karnatka
+            </span>
+        </div>
+        <div class='userInfo'>
+            <div>
+                <div><i class="fa fa-briefcase fa-2x" style="color:#64696b"></i></div>
+                <div>
+                    <div>
+                        SENIOR ARCHITECT
+                    </div>
+                    <div>
+                        Thomas
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='userInfo'>
+            <div>
+                <div><i class="fa fa-graduation-cap fa-2x" style="color:#64696b"></i></div>
+                <div>
+                    <div>
+                        J.J. SCHOOL OF ARCHITECTURE
+                    </div>
+                    <div>
+                        Bachelor of Architecture
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-default tab" ng-click="ctrl.joinUS()">
+                <span>3</span>
+                <span>Years of Experience</span>
+            </button>|
+            <button type="button" class="btn btn-default tab" ng-click="ctrl.joinUS()">
+                <span>2</span>
+                <span>Number of Previous Organisation ddfgdfgdfgfgfgdfgdfgdfb dfgdfgdf</span>
+            </button>|
+            <button type="button" class="btn btn-default tab" ng-click="ctrl.joinUS()">
+                <span>53</span>
+                <span>People Connected</span>
+            </button>
+        </div>
+        <div class='map'>
+            
+            <div style='height:100%;width:100%;' id='homePage' ng-include="ctrl.screenUrl" >
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <div  class='rightDiv'>
+            <div class='completeWidth'>
+                <div class="c100 p50 big green circle">
+                    <span>50%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class='completeWidth'>
+                <DIV>
+                    Suggested Connections
+                </DIV>
+                <DIV>
+                    <div ng-repeat="items in ctrl.connections" class='connections'>
+                        <div><span><i class="fa fa-dot-circle-o fa-3x"></i></span><span>{{items.name}}</span></div>
+                        <div>{{items.position}},{{items.company}}</div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-default full">View More</button>
+                    </div>
+                </DIV>
+            </div>
+            <div class="completeWidth">
+                <DIV>
+                    Suggested Companies
+                </DIV>
+                <DIV>
+                    <div ng-repeat="items in ctrl.companies" class='connections'>
+                        <div><span><i class="fa fa-dot-circle-o fa-2x"></i></span><span>{{items.name}}</span></div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-default full">View More</button>
+                    </div>
+                </DIV>
+            </div>
+        </div>
+    </div>
+</div>
